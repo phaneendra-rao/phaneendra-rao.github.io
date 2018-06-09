@@ -2,7 +2,7 @@
 
 
 
- 
+
 
 /*==================================================
 01. import css
@@ -1310,30 +1310,7 @@ border-color:1px solid #ffffff;
 }
 
 
-/*
-.fh5co-project-item:hover, .fh5co-project-item:focus {
-  bottom: 7px;
-  text-decoration: none;
-  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-}
-.fh5co-project-item:hover img, .fh5co-project-item:focus img {
-  -webkot-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.fh5co-project-item:hover figure .overlay, .fh5co-project-item:focus figure .overlay {
-  opacity: 1;
-  visibility: visible;
-}
-.fh5co-project-item:hover figure .overlay i, .fh5co-project-item:focus figure .overlay i {
-  margin-top: -15px;
-}*/
+
 .fh5co-project-item:hover h2, .fh5co-project-item:hover span, .fh5co-project-item:focus h2, .fh5co-project-item:focus span {
   text-decoration: none !important;
 }
@@ -1458,13 +1435,136 @@ button.mfp-arrow {
 .mfp-close-btn-in .mfp-close {
   color: #ffffff;
 }
+
+
+.images
+{
+  display:flex;
+  width:100%;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.images .items
+{
+  width:31%;
+  padding:2.33% 2.33% 2.33% 5.33%;
+
+}
+
+.about
+{
+  display: flex;
+  width:100%;
+
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about .about_me
+{
+  width:40%;
+  padding:2.25% 2.25% 2.25% 2.25%;
+
+}
+
+.about .about_content
+{
+  width:50%;
+}
+
+
+#contact .sub-title
+{
+  font-size: 2.5rem;
+}
+#contact .section-content
+{
+  font-size: 2.3rem;
+}
+#contact-form input
+{
+    font-size: 2.3rem;
+}
+#contact-form textarea
+{
+    font-size: 2.3rem;
+}
+#about .section-heading .sub-title
+{
+  font-size:2.5rem;
+}
+#about .section-content
+{
+  font-size: 2.1rem;
+}
+
+@media screen and (min-width: 480px) and (max-width: 790px) {
+
+  #menu a {
+    font-size: 2.5rem;
+  }
+
+  .images .items
+  {
+    width:44%;
+    padding:1.25% 1.25% 1.25% 5.25%;
+
+  }
+
+  .about .about_me
+  {
+    width:68%;
+    padding:8% 8% 8% 8%;
+
+  }
+
+  .about .about_content
+  {
+    width:100%;
+    padding:3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #menu a {
+    font-size: 3rem;
+  }
+
+  .images .items
+  {
+    width:75%;
+    padding:5% 5% 5% 15%;
+
+  }
+
+  .about .about_me
+  {
+    width:85%;
+    padding:3.2% 3.2% 3.2% 3.2%;
+
+  }
+
+  .about .about_content
+  {
+    width:100%;
+    padding: 3%;
+  }
+
+}
+
+
+
+
+
+
 /*==================================================
 responsive
 ==================================================*/
 @media (max-width: 991px) {
-  #menu a {
-    font-size: 18px;
-  }
+
   section {
     text-align: center;
   }
