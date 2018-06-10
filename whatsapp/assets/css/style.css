@@ -283,6 +283,12 @@ white-space: nowrap;
 text-align:right;color:grey;padding:6px;
 }
 
+#back-chat-1
+{
+ display: none;
+ visibility: hidden;
+}
+
 
 @media only screen and (max-width: 768px)
 {
@@ -308,7 +314,7 @@ text-align:right;color:grey;padding:6px;
     width:100vw;
   }
 
-  #back-chat
+  #back-chat-1
 {
  display: block;
 }
@@ -341,16 +347,20 @@ text-align:right;color:grey;padding:6px;
 
 @media only screen and (min-width: 769px) and (max-width: 1050px)
 {
+
+  #back-chat-1
+  {
+   display: none;
+   visibility: hidden;
+  }
+
   .chat-bg ul .d-flex .p-2 .right
   {
 
    margin-left:20%;
   }
 
-  #back-chat
-{
- display: none;
-}
+
   .chat-side .chat-list ul li .d-flex .flex-grow-1 h6
   {
     margin-bottom:0px;
