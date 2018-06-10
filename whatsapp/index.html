@@ -12,7 +12,7 @@
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
          <script src="https://use.fontawesome.com/eb092840cb.js"></script>
         <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="assets/css/style.css?v=2.4">
+        <link rel="stylesheet" href="assets/css/style.css?v=2.5">
 
 
     </head>
@@ -247,59 +247,59 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-              $(document).ready(function () {
-                  $('#open').on('click', function () {
-
-                      $('#open').addClass('d-none');
-                      $('#close').removeClass('d-none');
-
-                      $('#home').removeClass('col-md-12');
-
-
-                      $('.chat-side').css("width","100vw");
-                      $('#home').addClass('d-none');
-
-
-                  });
-
-                  $('#close').on('click', function () {
-
-                      $('#close').addClass('d-none');
-                      $('#open').removeClass('d-none');
-
-                      $('#home').addClass('col-md-12');
-
-
-                      $('.chat-side').css("width","");
-                      $('#home').removeClass('d-none');
-
-
-                  });
-
-
-
-
-
-                                    $(window).resize(function() {
-
-                                        var window_size = $(window).width();
-                                        if(window_size < 768)
-                                        {
-                                          $('#open').removeClass('d-none');
-
-                                          $('#home').addClass('col-lg-12');
-                                        }
-                                        else
-                                        {
-                                          $('#open').addClass('d-none');
-                                          $('#close').addClass('d-none');
-
-                                        }
-
-
-                                    });
-
-              });
+              // $(document).ready(function () {
+              //     $('#open').on('click', function () {
+              //
+              //         $('#open').addClass('d-none');
+              //         $('#close').removeClass('d-none');
+              //
+              //         $('#home').removeClass('col-md-12');
+              //
+              //
+              //         $('.chat-side').css("width","100vw");
+              //         $('#home').addClass('d-none');
+              //
+              //
+              //     });
+              //
+              //     $('#close').on('click', function () {
+              //
+              //         $('#close').addClass('d-none');
+              //         $('#open').removeClass('d-none');
+              //
+              //         $('#home').addClass('col-md-12');
+              //
+              //
+              //         $('.chat-side').css("width","");
+              //         $('#home').removeClass('d-none');
+              //
+              //
+              //     });
+              //
+              //
+              //
+              //
+              //
+              //                       $(window).resize(function() {
+              //
+              //                           var window_size = $(window).width();
+              //                           if(window_size < 768)
+              //                           {
+              //                             $('#open').removeClass('d-none');
+              //
+              //                             $('#home').addClass('col-lg-12');
+              //                           }
+              //                           else
+              //                           {
+              //                             $('#open').addClass('d-none');
+              //                             $('#close').addClass('d-none');
+              //
+              //                           }
+              //
+              //
+              //                       });
+              //
+              // });
           </script>
 
     </body>

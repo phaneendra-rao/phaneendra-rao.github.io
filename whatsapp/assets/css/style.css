@@ -305,33 +305,31 @@ text-align:right;color:grey;padding:6px;
 }
 
 
-@media only screen and (max-width: 900px)
+@media only screen and (max-width: 768px)
 {
-
-  .chat-side .chat-list ul li .d-flex .flex-grow-1 h6
+  #home
   {
-    margin-bottom:0px;
-    font-size:.800rem;
-  }
-  .chat-side .chat-list ul li .d-flex img
-  {
-    height:45px;
-    width:45px;
-    border:1px solid #ededed;
-    margin:0px;
-  }
-  .chat-side .chat-list ul li .d-flex .flex-grow-1 h6 p
-  {
-    font-size:.650rem;
-    margin-bottom:0px;
-    padding-top:6px;
-    padding-bottom:0px;
+    display: none;
   }
 
+  #chat-view-head
+  {
+    display:none;
+  }
+
+  #chat-view
+  {
+    width:100vw;
+  }
+
+  #back-chat
+{
+ display: block;
 }
-
-@media only screen and (min-width: 901px) and (max-width: 1050px)
-{
+  .chat-side
+  {
+    width:100vw;
+  }
 
   .chat-side .chat-list ul li .d-flex .flex-grow-1 h6
   {
@@ -348,6 +346,34 @@ text-align:right;color:grey;padding:6px;
   .chat-side .chat-list ul li .d-flex .flex-grow-1 h6 p
   {
     font-size:.750rem;
+    margin-bottom:0px;
+    padding-top:6px;
+    padding-bottom:0px;
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1050px)
+{
+  #back-chat
+{
+ display: none;
+}
+  .chat-side .chat-list ul li .d-flex .flex-grow-1 h6
+  {
+    margin-bottom:0px;
+    font-size:.800rem;
+  }
+  .chat-side .chat-list ul li .d-flex img
+  {
+    height:40px;
+    width:40px;
+    border:1px solid #ededed;
+    margin:0px;
+  }
+  .chat-side .chat-list ul li .d-flex .flex-grow-1 h6 p
+  {
+    font-size:.700rem;
     margin-bottom:0px;
     padding-top:6px;
     padding-bottom:0px;
