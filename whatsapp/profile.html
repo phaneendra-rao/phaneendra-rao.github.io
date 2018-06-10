@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Collapsible sidebar using Bootstrap 3</title>
+
+         <!-- Bootstrap CSS CDN -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+         <script src="https://use.fontawesome.com/eb092840cb.js"></script>
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css?v=2.3">
+
+
+    </head>
+    <body>
+
+      <div class="container-fluid" style="">
+        <div class="row">
+
+            <div class="chat-side" id="sidebar">
+              <div class="chatlist-heading d-flex" style="background-color:#00bfa5;height:100px;">
+                <div class="p-2 flex-grow-1" style="margin:12px;">
+                  <a href="index.html"><h5 style="color:white;padding-bottom:0px;margin-top:30px;">
+
+                    <button type="button" id="close" style="background-color:transparent;" class="btn btn-default float-left d-none">
+                      <i class="fa fa-arrow-left" style="color:white;" aria-hidden="true"></i>
+                  </button>
+
+                    <i class="fa fa-arrow-left d-none" id="profile-heading" style="margin-right:20px;font-weight:300;color:white;" aria-hidden="true"></i> Profile</h5></a>
+                </div>
+              </div>
+
+              <div class="profile-dp" style="height:40vh;background-color:#ededed;">
+              <div class=""  style="padding-top:30px;">
+                    <a href="index.html"><img src="assets/images/user.png" style="height:33vh;width:auto;border:1px solid grey;"  class="img-fluid align-middle mx-auto d-block rounded-circle" alt=""></a>
+                </div>
+              </div>
+
+              <div class="profile-name" style="height:15vh;background-color:#ffffff;">
+                <div class="col-md-10 offset-md-1">
+                  <h5 style="color:#00bfa5;padding-top:15px;font-size:.900rem;">Your name</h5>
+                  <p style="padding-top:10px;color:grey;">Funny <i class="fa fa-pencil float-right" style="padding-top:8px;" aria-hidden="true"></i></p>
+                </div>
+              </div>
+
+              <div class="profile-name-inst" style="height:12vh;background-color:#ededed;">
+                <div class="col-md-10 offset-md-1">
+                  <p style="padding-top:10px;color:grey;font-size:.900rem;">This is not your username or pin. This name will be visible to your WhatsApp contacts</p>
+                </div>
+              </div>
+
+              <div class="profile-status" style="height:15vh;background-color:#ffffff;">
+                <div class="col-md-10 offset-md-1">
+                  <h5 style="color:#00bfa5;padding-top:15px;font-size:.900rem;">About</h5>
+                  <p style="padding-top:10px;color:grey;">Busy <i class="fa fa-pencil float-right" style="padding-top:8px;" aria-hidden="true"></i></p>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+
+          <div class="col-md-8 offset-md-4 home-view text-center" id="home">
+
+
+            <button type="button" id="open" class="btn btn-default float-left d-none">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+
+
+            <a href="index.html">  <img src="assets/images/home.jpg" class="img-fluid align-middle mx-auto d-block rounded-circle" alt=""></a>
+              <div class="col-md-6 offset-md-3">
+                <h3 class="text-muted">Keep your phone connected</h3>
+                <p class="img-caption">WhatsApp connects to your phone to sync messages. To reduce data usage, connect your phone to Wi-Fi.</p>
+                <hr style="margin:30px 0px 30px 0px;">
+                <p class="bottom-line"><i class="fa fa-laptop" aria-hidden="true"></i> WhatsApp is available for Windows. <a href="#">Get it here.</a></p>
+
+              </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+              $(document).ready(function () {
+                  $('#open').on('click', function () {
+
+                      $('#open').addClass('d-none');
+                      $('#close').removeClass('d-none');
+
+                      $('#home').addClass('d-none');
+
+
+                      $('.chat-side').css("width","100vw");
+
+
+
+                  });
+
+                  $('#close').on('click', function () {
+
+                      $('#close').addClass('d-none');
+                      $('#open').removeClass('d-none');
+
+                      $('#home').addClass('col-md-12');
+
+
+                      $('.chat-side').css("width","");
+                      $('#home').removeClass('d-none');
+
+
+                  });
+
+                  var window_size = $(window).width();
+                  if(window_size > 768)
+                  {
+                    $('#profile-heading').removeClass('d-none');
+                  }
+
+
+
+
+
+                                    $(window).resize(function() {
+
+                                        var window_size = $(window).width();
+                                        if(window_size < 768)
+                                        {
+                                          $('#open').removeClass('d-none');
+                                          $('#profile-heading').addClass('d-none');
+                                          $('#home').addClass('col-lg-12');
+                                        }
+                                        else
+                                        {
+                                          $('#open').addClass('d-none');
+                                          $('#close').addClass('d-none');
+                                          $('#profile-heading').removeClass('d-none');
+
+                                        }
+
+
+                                    });
+
+              });
+          </script>
+
+    </body>
+</html>
