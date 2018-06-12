@@ -1,0 +1,116 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:300,400,500";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: 'Open Sans';
+    background-color:#f6f7fa;
+    text-align: justify;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+
+
+
+.form-group{
+  margin-top:50px;
+  width:100%;
+}
+
+.form-control
+{
+  margin-top:10px;
+}
+
+input[type=text]
+{
+
+    background-color:white;
+
+    box-shadow: inset 0px 0px 0px 0px red;
+    border:1px solid #e5e7ea;
+    color:#818387;
+
+}
+input[type=text]:focus {
+  border-color: #c2c4c6;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-default{
+  margin-top:0px;
+  outline:none;
+  background-color: white;
+  border: 1px solid #e5e7ea;
+  color:#818387;
+}
+
+
+#get_response .row
+{
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+#get_response .row img
+{
+  margin-bottom:50px;
+  box-shadow: 0 0 46px #C0C0C0;
+  border:8px solid white;
+  border-radius:6px;
+  width:100%;
+}
+
+.card
+{
+  padding:30px;
+  box-shadow: 0 0 46px #C0C0C0;
+}
+
+.card h3
+{
+  text-shadow: 0 0 66px #C0C0C0;
+}
+.card span
+{
+  font-size:1rem;
+}
+
+.card p
+{
+  color:black;
+  font-size:1rem;
+}
+
+.card .card-content
+{
+  font-size:.950rem;
+  color:black;
+}
+
+.card .card-content a
+{
+color:black;
+}
+
+.plot
+{
+  padding:15px;
+background-color:#fafafa;
+}
+
+.plot p
+{
+  font-size:.950rem;color:black;
+}
