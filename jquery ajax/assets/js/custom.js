@@ -12,7 +12,7 @@ $(document).ready(function () {
       $.ajax({
        type:'GET',
        dataType:"json",
-       url:"http://www.omdbapi.com/?apikey=3549bf05&i="+imdb_id+"&t="+title+"&plot=full",
+       url:"https://www.omdbapi.com/?apikey=3549bf05&i="+imdb_id+"&t="+title+"&plot=full",
        success:(data)=>{
          if(data.Response == "True")
          {
@@ -60,7 +60,7 @@ $(document).ready(function () {
       $.ajax({
        type:'GET',
        dataType:"json",
-       url:"http://www.omdbapi.com/?apikey=3549bf05&i="+imdb_id+"&plot=full",
+       url:"https://www.omdbapi.com/?apikey=3549bf05&i="+imdb_id+"&plot=full",
        success:(data)=>{
          if(data.Response == "True")
          {
@@ -109,7 +109,7 @@ $(document).ready(function () {
       $.ajax({
        type:'GET',
        dataType:"json",
-       url:"http://www.omdbapi.com/?apikey=3549bf05&t="+title+"&plot=full",
+       url:"https://www.omdbapi.com/?apikey=3549bf05&t="+title+"&plot=full",
        success:(data)=>{
 
          if(data.Response == "True")
