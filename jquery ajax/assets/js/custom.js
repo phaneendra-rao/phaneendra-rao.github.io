@@ -224,6 +224,15 @@ $(document).ready(function () {
       console.log(data);
 
       let img = data.Poster;
+      if(img != "N/A")
+      {
+        img = data.Poster;
+      }
+      else
+      {
+        img = "http://www.bibdsl.co.uk/imagegallery/parafax/Largedvd/All/L_Blvdd0759.Jpg";
+      }
+
       let title = data.Title;
       let imdb_id = data.imdbID;
       let imdb_votes = data.imdbVotes;
