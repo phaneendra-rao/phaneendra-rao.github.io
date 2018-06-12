@@ -106,6 +106,7 @@ $(document).ready(function () {
     }
     else if($.trim(title)!='' && $.trim(title)!=null)
     {
+
       $.ajax({
        type:'GET',
        dataType:"json",
@@ -212,7 +213,7 @@ $(document).ready(function () {
 
       $('#get_response').html('');
 
-      $('#get_response').html('<div class="row"><div class="col-md-3 col-sm-12"><img src="'+img+'" alt="'+title+'"  class="img img-fluid"></div><div class="col-md-9"><div class="card card-body"><h3><b>'+title+' (<span>IMDB ID : '+imdb_id+'</span> | <span>IMDB Votes : '+imdb_votes+'</span> | <span>IMDB Rating : '+imdb_rating+'</span>)</b></h3><p><b>Rating</b> : '+ratings+' <br> <b>Genre</b> : '+genre+' | <b>Date of release </b> : '+date_of_release+' | <b>Rated </b> : '+rated+' | <b>Type</b> : '+type+' | <b>Runtime</b> : '+runtime+' | <b>Language</b> : '+language+' | <b>Country</b> : '+country+'</p><hr style="border: 1px solid #C0C0C0;"><p class="card-content"><b>Director : </b>'+director+' <br><b>Writer : </b>'+writer+'<br><b>Actors : </b>'+actors+'<br><b>Awards : </b>'+awards+' <br><b>Box Office : </b>'+boxoffice+' <br><b>Production : </b>'+production+' <br><b>Website : </b> '+website+'<div class="plot"><p><b>Plot -</b>'+plot+'</p></div></p></div></div></div>');
+      $('#get_response').html('<div class="row"><div class="col-md-3 col-sm-12"><img src="'+img+'" alt="'+title+'"  class="img img-fluid"></div><div class="col-md-9"><div class="card card-body"><h3><b>'+title+' (<span>IMDB ID : '+imdb_id+'</span> | <span>IMDB Votes : '+imdb_votes+'</span> | <span>IMDB Rating : '+imdb_rating+'</span>)</b></h3><hr style="border: 1px solid #C0C0C0;"><p><b>Rating</b> : '+ratings+' <br> <b>Genre</b> : '+genre+' | <b>Date of release </b> : '+date_of_release+' | <b>Rated </b> : '+rated+' | <b>Type</b> : '+type+' | <b>Runtime</b> : '+runtime+' | <b>Language</b> : '+language+' | <b>Country</b> : '+country+'</p><hr style="border: 1px solid #C0C0C0;"><p class="card-content"><b>Director : </b>'+director+' <br><b>Writer : </b>'+writer+'<br><b>Actors : </b>'+actors+'<br><b>Awards : </b>'+awards+' <br><b>Box Office : </b>'+boxoffice+' <br><b>Production : </b>'+production+' <br><b>Website : </b> '+website+'<div class="plot"><p><b>Plot -</b>'+plot+'</p></div></p></div></div></div>');
 
     }
 
@@ -266,7 +267,7 @@ $(document).ready(function () {
 
       $('#get_response').html('');
 
-      $('#get_response').html('<div class="row"><div class="col-md-3 col-sm-12"><img src="'+img+'" alt="'+title+'"  class="img img-fluid"></div><div class="col-md-9"><div class="card card-body"><h3><b>'+title+' (<span>IMDB ID : '+imdb_id+'</span> | <span>IMDB Votes : '+imdb_votes+'</span> | <span>IMDB Rating : '+imdb_rating+'</span>)</b></h3><p><b>Rating</b> : '+ratings+' <br> <b>Genre</b> : '+genre+' | <b>Date of release </b> : '+date_of_release+' | <b>Rated </b> : '+rated+' | <b>Type</b> : '+type+' | <b>Runtime</b> : '+runtime+' | <b>Language</b> : '+language+' | <b>Country</b> : '+country+'</p><hr style="border: 1px solid #C0C0C0;"><p class="card-content"><b>Director : </b>'+director+' <br><b>Writer : </b>'+writer+'<br><b>Actors : </b>'+actors+'<br><b>Awards : </b>'+awards+' <br><b>Total seasons : </b>'+total_seasons+'<br><b>Website : </b> '+website+'<div class="plot"><p><b>Plot -</b>'+plot+'</p></div></p></div></div></div>');
+      $('#get_response').html('<div class="row"><div class="col-md-3 col-sm-12"><img src="'+img+'" alt="'+title+'"  class="img img-fluid"></div><div class="col-md-9"><div class="card card-body"><h3><b>'+title+' (<span>IMDB ID : '+imdb_id+'</span> | <span>IMDB Votes : '+imdb_votes+'</span> | <span>IMDB Rating : '+imdb_rating+'</span>)</b></h3><hr style="border: 1px solid #C0C0C0;"><p><b>Rating</b> : '+ratings+' <br> <b>Genre</b> : '+genre+' | <b>Date of release </b> : '+date_of_release+' | <b>Rated </b> : '+rated+' | <b>Type</b> : '+type+' | <b>Runtime</b> : '+runtime+' | <b>Language</b> : '+language+' | <b>Country</b> : '+country+'</p><hr style="border: 1px solid #C0C0C0;"><p class="card-content"><b>Director : </b>'+director+' <br><b>Writer : </b>'+writer+'<br><b>Actors : </b>'+actors+'<br><b>Awards : </b>'+awards+' <br><b>Total seasons : </b>'+total_seasons+'<br><b>Website : </b> '+website+'<div class="plot"><p><b>Plot -</b>'+plot+'</p></div></p></div></div></div>');
 
     }
 
