@@ -200,7 +200,7 @@ $(document).ready(function () {
       let website = "";
       if(website_link!="N/A")
       {
-        website = '<a href="'+website_link+'" target="blank" class="btn btn-default btn-sm"> Click here</a>';
+        website = '<a href="'+website_link+'" target="blank" class="btn btn-default btn-sm" style="color:white;"> Click here</a>';
       }
       else {
         website = "N/A"
@@ -254,7 +254,7 @@ $(document).ready(function () {
       let website = "";
       if(website_link!="N/A")
       {
-        website = '<a href="'+website_link+'" target="blank" class="btn btn-default btn-sm"> Click here</a>';
+        website = '<a href="'+website_link+'" target="blank" class="btn btn-default btn-sm" style="color:white;"> Click here</a>';
       }
       else {
         website = "N/A"

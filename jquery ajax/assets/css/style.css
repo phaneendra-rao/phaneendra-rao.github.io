@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Open Sans';
-    background-color:#f6f7fa;
+    background-color:#000000;
     text-align: justify;
 }
 
@@ -51,9 +51,9 @@ input[type=text]:focus {
 .btn-default{
   margin-top:0px;
   outline:none;
-  background-color: white;
+  background-color: black;
   border: 1px solid #e5e7ea;
-  color:#818387;
+  color:#ffffff;
 }
 
 
@@ -66,7 +66,7 @@ input[type=text]:focus {
 #get_response .row img
 {
   margin-bottom:50px;
-  box-shadow: 0 0 46px #C0C0C0;
+  box-shadow: 0 0 20px #fafafa;
   border:8px solid white;
   border-radius:6px;
   width:100%;
@@ -75,7 +75,7 @@ input[type=text]:focus {
 .card
 {
   padding:30px;
-  box-shadow: 0 0 46px #C0C0C0;
+  box-shadow: 0 0 20px #fafafa;
 }
 
 .card h3
