@@ -1,0 +1,39 @@
+
+
+  .accordions ul
+  {
+    display: flex;
+    flex-direction: column;
+    margin-top:10vh;
+    justify-content: space-around;
+    list-style-type: none;
+    padding:0px;
+    align-items: center;
+    margin-bottom:20vh;
+    padding-bottom:20px;
+  }
+  .accordions ul li
+  {
+     width:75vw;
+     border:1px solid grey;
+     padding: 15px;
+     cursor: pointer;
+     margin:20px 20px 0px 20px;
+     box-shadow: 0 0 15px #d1d1d1;
+  }
+
+
+  .accordion-content
+  {
+    display:none;
+  }
+  .accordion-content p
+  {
+     width:75vw;
+     color:black;
+     font-size: 1rem;
+     border:1px solid grey;
+     border-top:none;
+     padding:15px;
+     text-align:justify;
+  }
