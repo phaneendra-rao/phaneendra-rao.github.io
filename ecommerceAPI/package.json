@@ -1,0 +1,24 @@
+{
+  "name": "e-commerce-application",
+  "version": "1.0.0",
+  "description": "This is just an assignment, edwisor want me to create rest API on e-commerce-application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Funny",
+  "license": "ISC",
+  "dependencies": {
+    "apidoc": "^0.17.6",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "mongoose": "^5.2.8",
+    "npm": "^6.4.0",
+    "pino": "^5.1.0",
+    "shortid": "^2.2.13"
+  }
+}
